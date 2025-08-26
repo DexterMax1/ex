@@ -5,9 +5,10 @@ suite('Unit Tests', function () {
   suite('Basic Assertions', function () {
     // #1
     test('#isNull, #isNotNull', function () {
-      assert.fail(isNotNull, 'null no debería ser nulo aquí');
-      assert.fail(isNull, '1 debería ser nulo aquí');
+     assert.isNull(null, 'null es efectivamente nulo');
+     assert.isNotNull(1, '1 no es nulo');
     });
+
     // #2
     test('#isDefined, #isUndefined', function () {
       assert.fail(null, 'null is not undefined');
@@ -167,6 +168,7 @@ suite('Unit Tests', function () {
   // -----------------------------------------------------------------------------
 
 });
+
 
 
 
